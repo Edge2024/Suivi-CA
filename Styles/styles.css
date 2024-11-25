@@ -1,0 +1,87 @@
+@import url("variables.css");
+
+body {
+  font-family: var(--font-family-primary);
+  margin: 0;
+  padding: 20px;
+  background-color: var(--background-color);
+}
+
+.table-container {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+}
+
+.rounded-table {
+  width: 100%;
+  margin: 40px 0;
+  font-size: 0.9rem;
+  border-spacing: 0; /* Retire les bordures entre les cellules */
+}
+
+.rounded-table thead {
+  background-color: var(--secondary-color1);
+  color: var(--white);
+}
+
+.rounded-table thead tr:first-child th:first-child {
+  border-top-left-radius: 20px; /* Coin supérieur gauche */
+  border-bottom-left-radius: 20px; /* Coin inférieur gauche */
+}
+
+.rounded-table thead tr:first-child th:last-child {
+  border-top-right-radius: 20px; /* Coin supérieur droit */
+  border-bottom-right-radius: 20px; /* Coin inférieur droit */
+}
+
+.rounded-table thead th {
+  padding: 12px 15px;
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid var(--border-color); /* Ligne séparant thead de tbody */
+}
+
+.rounded-table tbody td {
+  padding: 12px 15px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+/* Séparation visuelle entre thead et tbody */
+.rounded-table tbody tr:first-child td {
+  padding-top: 20px; /* Ajoute un espace pour ne pas coller thead et tbody */
+}
+
+.rounded-table tbody tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.rounded-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Supprime les bordures internes */
+.rounded-table th,
+.rounded-table td {
+  border: none;
+}
+
+/* Facturation (deuxième tableau) */
+.facturation-table th,
+.facturation-table td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: var(--white);
+  font-weight: 400;
+}
+
+.facturation-table input[type="checkbox"] {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.facturation-table tbody tr:hover {
+  background-color: #f5f5f5;
+}

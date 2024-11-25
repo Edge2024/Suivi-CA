@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liste des missions</title>
+    <link rel="stylesheet" href="./Styles/styles.css" />
+  </head>
+  <body>
+    <div class="table-container">
+      <!-- Premier tableau -->
+      <table class="rounded-table">
+        <thead>
+          <tr>
+            <th>CA HT</th>
+            <th>CA facturé</th>
+            <th>Coût HT</th>
+            <th>Marge HT</th>
+            <th>Rentabilité</th>
+            <th>Temps accordé</th>
+            <th>Temps dépensé</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>21 600,00 €</td>
+            <td>10 000,00 €</td>
+            <td>14 575,27 €</td>
+            <td>14 575,27 €</td>
+            <td>32,52%</td>
+            <td>21j</td>
+            <td>21j</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!-- Deuxième tableau -->
+      <table class="rounded-table">
+        <thead>
+          <tr>
+            <th colspan="10" class="table-title">Facturation</th>
+          </tr>
+        </thead>
+        <tbody class="facturation-table">
+          <tr>
+            <th>
+              <input type="checkbox" />
+              Début
+            </th>
+            <th>Fin</th>
+            <th>CA HT</th>
+            <th>Coût HT</th>
+            <th>Marge HT</th>
+            <th>État</th>
+            <th>CA commandé</th>
+            <th>CA facturé</th>
+            <th>Rentabilité</th>
+          </tr>
+        </tbody>
+        <tbody class="facturation-table">
+          <tr>
+            <th>
+              <input type="checkbox" />
+              13/05/24
+            </th>
+            <th>30/09/24</th>
+            <th>0,00 €</th>
+            <th>0,00 €</th>
+            <th>0,00 €</th>
+            <th>En cours</th>
+            <th>0,00 €</th>
+            <th>0,00 €</th>
+            <th>0,00 €</th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
