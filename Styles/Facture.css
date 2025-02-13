@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #000;
+  background-color: #fff;
+  font-size: 0.875rem;
+}
+
+.invoice-container {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.header .company-info,
+.header .recipient-info {
+  text-align: left;
+}
+
+.header .company-info img {
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.invoice-details {
+  margin-bottom: 2rem;
+}
+
+.invoice-details h2 {
+  text-transform: uppercase;
+  color: #4048ff;
+  margin-bottom: 1rem;
+}
+
+.invoice-details .details {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.invoice-table th,
+.invoice-table td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.invoice-table th {
+  background-color: #4048ff;
+  color: #fff;
+  font-weight: 600;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.summary h3 {
+  text-transform: uppercase;
+  color: #172554;
+  margin-bottom: 1rem;
+}
+
+.total-ttc {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #4048ff;
+}
+
+.payment-info {
+  background-color: rgba(64, 72, 255, 0.05);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #555;
+}
+
+.footer .page-number {
+  margin-top: 1rem;
+}

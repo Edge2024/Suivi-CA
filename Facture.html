@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facture</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+    />
+    <link rel="stylesheet" href="./Styles/Facture.css" />
+  </head>
+  <body>
+    <div class="invoice-container">
+      <div class="header">
+        <div class="company-info">
+          <img src="Logo EDGE Colors 1 Line 1.png" alt="Logo EDGE" />
+          <p>
+            66 AVENUE DES CHAMPS ELYSEES<br />75008 PARIS 8ème - France<br />contact@edgeconsulting.fr<br />07
+            52 12 14 81
+          </p>
+        </div>
+        <div class="recipient-info">
+          <h2>DESTINATAIRE</h2>
+          <b>McDonald's France Services</b>
+          <p>
+            N° de TVA FR74722003936<br />1 Rue Gustave Eiffel<br />78280
+            Guyancourt - France
+          </p>
+        </div>
+      </div>
+      <div class="invoice-details">
+        <h2>FACTURE</h2>
+        <div class="details">
+          <div>
+            <p>Numéro de Facture</p>
+            <p>Date d'émission</p>
+            <p>Date d'échéance</p>
+            <p>Type de facture</p>
+          </div>
+          <div>
+            <p>F-2024-312</p>
+            <p>25 nov. 2024</p>
+            <p>25 déc. 2024</p>
+            <p>Prestations de services</p>
+          </div>
+        </div>
+      </div>
+      <table class="invoice-table">
+        <thead>
+          <tr>
+            <th>Description</th>
+            <th>Quantité</th>
+            <th>Prix u. HT</th>
+            <th>TVA (%)</th>
+            <th>Total HT</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Astreinte</td>
+            <td>10,4 heures</td>
+            <td>78,57 €</td>
+            <td>20%</td>
+            <td>817,13 €</td>
+          </tr>
+          <tr>
+            <td>Astreinte</td>
+            <td>2 unités</td>
+            <td>78,57 €</td>
+            <td>20%</td>
+            <td>157,14 €</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="summary">
+        <div class="details-tva">
+          <h3>Détails TVA</h3>
+          <p>Taux: 20%</p>
+          <p>Montant TVA: 194,86 €</p>
+          <p>Base HT: 974,27 €</p>
+        </div>
+        <div class="recap">
+          <h3>Récapitulatif</h3>
+          <p>Total HT: 974,27 €</p>
+          <p>Total TVA: 194,86 €</p>
+          <p class="total-ttc">Total TTC: 1169,13 €</p>
+        </div>
+      </div>
+      <div class="payment-info">
+        <h3>Informations de Paiement</h3>
+        <p>Moyen de paiement: Virement</p>
+        <p>Etablissement: QONTO</p>
+        <p>IBAN: FR76 1695 8000 0175 5557 9617 321</p>
+        <p>BIC: QNTOFRP1XXX</p>
+        <p>Référence: PLBKMM6GXBACZZ</p>
+      </div>
+      <div class="footer">
+        <p>
+          En cas de retard de paiement, des pénalités au triple du taux
+          d'intérêt légal et une indemnité forfaitaire de 40 € seront
+          appliquées.
+        </p>
+        <p>
+          SAS, société par actions simplifiée au capital social de 50 000,00 € |
+          N° SIREN 882.104.912 | N° de TVA FR33882104912 • Généré par © EDGE
+          Consulting
+        </p>
+        <p class="page-number">Page 1/1</p>
+      </div>
+    </div>
+  </body>
+</html>
